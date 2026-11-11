@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los misterios y curiosidades del universo</title>
+    <link rel="stylesheet" href="codigoaaron.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>LOS MISTERIOS Y CURIOSIDADES DEL UNIVERSO</h2>
+    </header>
+
+    <nav>
+        <span id="nav1" class="activo">Inicio</span>
+        <span id="nav2">Contenido principal</span>
+        <span id="nav3">Información adicional</span>
+        <span id="nav4">Contacto</span>
+    </nav>
+
+    <!-- PÁGINA 1: INICIO -->
+    <section id="inicio" class="pagina activa">
+
+        <div class="titulo">
+            <h1>Más allá de lo conocido</h1>
+            <h2>EL UNIVERSO</h2>
+            <p>Descubre los misterios que esconde el espacio</p>
+        </div>
+
+        <div class="presentacion">
+            <img src="img/planeta.jpg" alt="Planeta en el espacio">
+
+            <div class="introduccion">
+                <h2>Un universo lleno de secretos</h2>
+                <p>
+                    El universo es un lugar inmenso y fascinante que guarda
+                    misterios que todavía no logramos comprender por completo.
+                    Desde enormes galaxias hasta fenómenos sorprendentes,
+                    cada rincón del espacio tiene algo interesante que descubrir.
+                </p>
+                <p>
+                    Acompáñanos a explorar algunos de los fenómenos más
+                    sorprendentes que existen más allá de nuestro planeta.
+                </p>
+                <button class="boton" onclick="cambiarPagina(2)">
+                    Explorar
+                </button>
+            </div>
+        </div>
+
+        <div class="temas">
+            <button class="boton tema" onclick="mostrarTema('agujeros')">
+                Agujeros negros
+            </button>
+
+            <button class="boton tema" onclick="mostrarTema('materia')">
+                Materia oscura
+            </button>
+
+            <button class="boton tema" onclick="mostrarTema('energia')">
+                Energía oscura
+            </button>
+
+            <button class="boton tema" onclick="mostrarTema('preguntas')">
+                Grandes preguntas
+            </button>
+        </div>
+
+        <div id="agujeros" class="tema-info" hidden>
+            <img src="img/agujero-negro.jpg" alt="Agujero negro">
+            <div>
+                <h2>Agujeros negros</h2>
+                <p>
+                    Son regiones del espacio donde la gravedad es tan intensa
+                    que nada, ni siquiera la luz, puede escapar una vez que
+                    cruza su límite llamado horizonte de sucesos.
+                </p>
+            </div>
+        </div>
+
+        <div id="materia" class="tema-info" hidden>
+            <img src="img/materia-oscura.jpg" alt="Representación de materia oscura">
+            <div>
+                <h2>Materia oscura</h2>
+                <p>
+                    Es una forma de materia que no podemos observar directamente
+                    porque no emite luz. Los científicos saben que existe por
+                    sus efectos gravitacionales sobre las galaxias.
+                </p>
+            </div>
+        </div>
+
+        <div id="energia" class="tema-info" hidden>
+            <img src="img/energia-oscura.jpg" alt="Representación de energía oscura">
+            <div>
+                <h2>Energía oscura</h2>
+                <p>
+                    Es el nombre que se le da al fenómeno relacionado con la
+                    expansión acelerada del universo. Aunque todavía no se
+                    conoce su verdadera naturaleza, es uno de los mayores
+                    misterios de la ciencia.
+                </p>
+            </div>
+        </div>
+
+        <div id="preguntas" class="tema-info" hidden>
+            <img src="img/galaxia.jpg" alt="Galaxia en el universo">
+            <div>
+                <h2>Grandes preguntas</h2>
+                <p>
+                    ¿Cómo comenzó el universo? ¿Qué hay más allá de lo que
+                    podemos observar? ¿Estamos solos? Estas preguntas motivan
+                    a los científicos a seguir investigando el espacio.
+                </p>
+            </div>
+        </div>
+
+        <div class="navegacion">
+            <span></span>
+            <button class="boton" onclick="cambiarPagina(2)">
+                Siguiente página
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- PÁGINA 2: CONTENIDO PRINCIPAL -->
+    <section id="misterios" class="pagina">
+
+        <div class="subtitulo">
+            <h1>Los grandes misterios del universo</h1>
+            <p>Conoce tres fenómenos que siguen sorprendiendo a la ciencia.</p>
+        </div>
+
+        <div class="tarjetas">
+
+            <details class="tarjeta">
+                <summary>
+                    <img src="img/agujero-negro.jpg" alt="Agujero negro">
+                    <h2>Agujeros negros</h2>
+                    <span>Descubrir más</span>
+                </summary>
+
+                <div class="informacion">
+                    <p>
+                        Los agujeros negros se forman cuando una gran cantidad
+                        de materia queda concentrada en una región muy pequeña.
+                    </p>
+                    <p>
+                        Su gravedad es tan fuerte que ni siquiera la luz puede
+                        escapar de ellos. Por eso no podemos verlos directamente.
+                    </p>
+                    <p>
+                        Los científicos los estudian observando cómo afectan
+                        a las estrellas y al material que los rodea.
+                    </p>
+                </div>
+            </details>
+
+            <details class="tarjeta">
+                <summary>
+                    <img src="img/materia-oscura.jpg" alt="Materia oscura">
+                    <h2>Materia oscura</h2>
+                    <span>Descubrir más</span>
+                </summary>
+
+                <div class="informacion">
+                    <p>
+                        La materia oscura es invisible porque no refleja,
+                        absorbe ni emite luz que podamos detectar.
+                    </p>
+                    <p>
+                        Los científicos creen que está presente en grandes
+                        cantidades en el universo debido a la fuerza
+                        gravitacional que ejerce sobre las galaxias.
+                    </p>
+                    <p>
+                        Aunque todavía no sabemos exactamente de qué está
+                        formada, su estudio ayuda a comprender cómo funciona
+                        el universo.
+                    </p>
+                </div>
+            </details>
+
+            <details class="tarjeta">
+                <summary>
+                    <img src="img/energia-oscura.jpg" alt="Energía oscura">
+                    <h2>Energía oscura</h2>
+                    <span>Descubrir más</span>
+                </summary>
+
+                <div class="informacion">
+                    <p>
+                        La energía oscura es un fenómeno relacionado con la
+                        expansión acelerada del universo.
+                    </p>
+                    <p>
+                        Los científicos todavía investigan qué es y cómo
+                        funciona, ya que no se conoce su naturaleza exacta.
+                    </p>
+                    <p>
+                        Su descubrimiento cambió la manera en que entendemos
+                        la evolución del universo.
+                    </p>
+                </div>
+            </details>
+
+        </div>
+
+        <div class="navegacion">
+            <button class="boton" onclick="cambiarPagina(1)">
+                Página anterior
+            </button>
+
+            <button class="boton" onclick="cambiarPagina(3)">
+                Siguiente página
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- PÁGINA 3: INFORMACIÓN ADICIONAL -->
+    <section id="curiosidades" class="pagina">
+
+        <div class="subtitulo">
+            <h1>Curiosidades del universo</h1>
+            <p>Datos sorprendentes que quizá no conocías.</p>
+        </div>
+
+        <div class="contenido-curiosidades">
+
+            <div class="texto-curiosidades">
+                <h2>¿Sabías que...?</h2>
+
+                <ul>
+                    <li>El universo tiene aproximadamente 13 800 millones de años.</li>
+                    <li>Existen miles de millones de galaxias.</li>
+                    <li>La luz del Sol tarda aproximadamente 8 minutos y 20 segundos en llegar a la Tierra.</li>
+                    <li>Existen estrellas mucho más grandes que nuestro Sol.</li>
+                </ul>
+            </div>
+
+            <img src="img/galaxia.jpg" alt="Galaxia llena de estrellas">
+
+        </div>
+
+        <div class="preguntas">
+
+            <h2>Preguntas que despiertan curiosidad</h2>
+
+            <details class="pregunta">
+                <summary>
+                    ¿Por qué el espacio es oscuro si existen tantas estrellas?
+                </summary>
+                <p>
+                    Porque el universo tiene una edad limitada y la luz de
+                    muchos objetos todavía no ha llegado hasta nosotros.
+                    Además, la expansión del universo estira la luz y puede
+                    hacer que sea difícil de observar.
+                </p>
+            </details>
+
+            <details class="pregunta">
+                <summary>
+                    ¿Qué pasaría si alguien se acercara a un agujero negro?
+                </summary>
+                <p>
+                    Experimentaría efectos de gravedad muy intensos. También
+                    el tiempo transcurriría de manera diferente en comparación
+                    con alguien que estuviera lejos. Los efectos dependen de
+                    la masa y las características del agujero negro.
+                </p>
+            </details>
+
+            <details class="pregunta">
+                <summary>
+                    ¿Por qué los planetas no caen directamente al Sol?
+                </summary>
+                <p>
+                    Porque la gravedad del Sol atrae a los planetas, mientras
+                    que su movimiento hacia adelante hace que sigan una órbita
+                    a su alrededor. Así se mantienen girando en el espacio.
+                </p>
+            </details>
+
+        </div>
+
+        <div class="dato">
+            <img src="img/saturno.jpg" alt="Anillos de Saturno">
+
+            <div>
+                <h2>Un dato sorprendente sobre Saturno</h2>
+                <p>
+                    Saturno es famoso por sus impresionantes anillos, formados
+                    principalmente por fragmentos de hielo y roca. Con el paso
+                    del tiempo, parte de ese material cae hacia el planeta.
+                    Por eso, sus anillos podrían desaparecer lentamente
+                    en el futuro.
+                </p>
+            </div>
+        </div>
+
+        <div class="navegacion">
+            <button class="boton" onclick="cambiarPagina(2)">
+                Página anterior
+            </button>
+
+            <button class="boton" onclick="cambiarPagina(4)">
+                Siguiente página
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- PÁGINA 4: CONTACTO -->
+    <section id="contacto" class="pagina">
+
+        <div class="subtitulo">
+            <h1>Comparte tu opinión</h1>
+            <p>
+                Tu opinión también forma parte de este viaje por el universo.
+            </p>
+        </div>
+
+        <div class="contacto-contenido">
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+
+                <label for="tema">Tema de interés:</label>
+                <input
+                    type="text"
+                    id="tema"
+                    placeholder="¿Qué tema te gustó más?"
+                    required
+                >
+
+                <label for="comentario">Comentario:</label>
+                <textarea
+                    id="comentario"
+                    rows="5"
+                    placeholder="Escribe tu comentario..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="boton">
+                    Guardar comentario
+                </button>
+
+            </form>
+
+            <img src="img/sistema-solar.jpg" alt="Sistema solar">
+
+        </div>
+
+        <!-- COMENTARIOS GUARDADOS -->
+        <div class="comentarios">
+
+            <h2>Comentarios de los visitantes</h2>
+
+            <p class="descripcion-comentarios">
+                Aquí aparecerán los comentarios guardados en este dispositivo
+                y navegador.
+            </p>
+
+            <div id="lista-comentarios">
+                <p class="sin-comentarios">
+                    Todavía no hay comentarios.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN DEL AUTOR -->
+        <div class="autor">
+
+            <details>
+                <summary>Conoce al creador de esta página</summary>
+
+                <div class="informacion-autor">
+                    <h3>Bruno Aaron Matilde Flores</h3>
+                    <p>Correo: Bruno.flo@gmail.com</p>
+                    <p>Teléfono: 123 4512</p>
+                    <p>
+                        Esta página fue creada para compartir información,
+                        curiosidades y misterios sobre el universo.
+                    </p>
+                </div>
+
+            </details>
+
+        </div>
+
+        <div class="navegacion">
+            <button class="boton" onclick="cambiarPagina(3)">
+                Página anterior
+            </button>
+
+            <span></span>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>Los misterios y curiosidades del universo</p>
+        <p>Explorando lo desconocido más allá de nuestro planeta.</p>
+    </footer>
+
+
+    <!-- FUNCIONES DE LA PÁGINA -->
+    <script>
+
+        // CAMBIAR ENTRE LAS CUATRO PÁGINAS
+        function cambiarPagina(numero) {
+
+            let paginas = document.querySelectorAll(".pagina");
+
+            paginas.forEach(function(pagina) {
+                pagina.classList.remove("activa");
+            });
+
+            let nombres = ["inicio", "misterios", "curiosidades", "contacto"];
+
+            document.getElementById(nombres[numero - 1])
+                .classList.add("activa");
+
+            let botones = document.querySelectorAll("nav span");
+
+            botones.forEach(function(boton) {
+                boton.classList.remove("activo");
+            });
+
+            document.getElementById("nav" + numero)
+                .classList.add("activo");
+
+            window.scrollTo(0, 0);
+        }
+
+
+        // MOSTRAR INFORMACIÓN DE LOS TEMAS
+        function mostrarTema(id) {
+
+            let temas = document.querySelectorAll(".tema-info");
+
+            temas.forEach(function(tema) {
+                tema.hidden = true;
+            });
+
+            document.getElementById(id).hidden = false;
+        }
+
+
+        // MOSTRAR LOS COMENTARIOS GUARDADOS
+        function mostrarComentarios() {
+
+            let lista = document.getElementById("lista-comentarios");
+
+            lista.innerHTML = "";
+
+            let comentarios = JSON.parse(
+                localStorage.getItem("comentariosUniverso") || "[]"
+            );
+
+            if (comentarios.length === 0) {
+
+                let mensaje = document.createElement("p");
+                mensaje.className = "sin-comentarios";
+                mensaje.textContent = "Todavía no hay comentarios.";
+
+                lista.appendChild(mensaje);
+
+                return;
+            }
+
+            comentarios.forEach(function(dato) {
+
+                let caja = document.createElement("div");
+                caja.className = "comentario-visitante";
+
+                let nombre = document.createElement("h3");
+                nombre.textContent = dato.nombre;
+
+                let tema = document.createElement("p");
+                tema.className = "tema-visitante";
+                tema.textContent = "Tema de interés: " + dato.tema;
+
+                let comentario = document.createElement("p");
+                comentario.textContent = dato.comentario;
+
+                caja.appendChild(nombre);
+                caja.appendChild(tema);
+                caja.appendChild(comentario);
+
+                lista.appendChild(caja);
+
+            });
+        }
+
+
+        // GUARDAR LOS COMENTARIOS SIN CORREO NI BASE DE DATOS
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            let nombre = document.getElementById("nombre").value.trim();
+            let tema = document.getElementById("tema").value.trim();
+            let comentario = document.getElementById("comentario").value.trim();
+
+            if (nombre === "" || tema === "" || comentario === "") {
+                alert("Completa todos los campos.");
+                return;
+            }
+
+            let comentarios = JSON.parse(
+                localStorage.getItem("comentariosUniverso") || "[]"
+            );
+
+            comentarios.push({
+                nombre: nombre,
+                tema: tema,
+                comentario: comentario
+            });
+
+            localStorage.setItem(
+                "comentariosUniverso",
+                JSON.stringify(comentarios)
+            );
+
+            mostrarComentarios();
+
+            document.getElementById("formulario").reset();
+
+            alert("¡Tu comentario se guardó correctamente!");
+
+        });
+
+
+        // CARGAR LOS COMENTARIOS AL ABRIR LA PÁGINA
+        mostrarComentarios();
+
+    </script>
+
+</body>
+</html>
